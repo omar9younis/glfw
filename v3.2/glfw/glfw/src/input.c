@@ -150,7 +150,7 @@ GLFWbool _glfwIsPrintable(int key)
 GLFWAPI int glfwGetInputMode(GLFWwindow* handle, int mode)
 {
     _GLFWwindow* window = (_GLFWwindow*) handle;
-    assert(window != NULL);
+    //assert(window != NULL);
 
     _GLFW_REQUIRE_INIT_OR_RETURN(0);
 
@@ -171,7 +171,7 @@ GLFWAPI int glfwGetInputMode(GLFWwindow* handle, int mode)
 GLFWAPI void glfwSetInputMode(GLFWwindow* handle, int mode, int value)
 {
     _GLFWwindow* window = (_GLFWwindow*) handle;
-    assert(window != NULL);
+    //assert(window != NULL);
 
     _GLFW_REQUIRE_INIT();
 
@@ -259,7 +259,7 @@ GLFWAPI const char* glfwGetKeyName(int key, int scancode)
 GLFWAPI int glfwGetKey(GLFWwindow* handle, int key)
 {
     _GLFWwindow* window = (_GLFWwindow*) handle;
-    assert(window != NULL);
+    //assert(window != NULL);
 
     _GLFW_REQUIRE_INIT_OR_RETURN(GLFW_RELEASE);
 
